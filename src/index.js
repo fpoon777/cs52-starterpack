@@ -1,11 +1,7 @@
-import $ from 'jquery';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import './style.scss';
 
-let num = 0;
-function printSecond() {
-  $('#main').html(`You have been on this page for ${num} seconds.`);
-  // eslint-disable-next-line linebreak-style
-  num += 1;
-}
+const App = () => <div className="test">All the REACT are belong to us!</div>;
 
-setInterval(() => { printSecond(); }, 1000);
+ReactDOM.render(<App />, document.getElementById('main'));
